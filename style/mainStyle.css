@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    border:none;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+    color:#14045c;
+}
+.header{
+    width:100%;
+    background:#ff4d00;
+    padding:0.5% 8%;
+}
+nav img {
+    width:160px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+/*Codes below for apps section*/
+.apps{
+    padding:2% 8% 0% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apps .intro{
+    margin:0 0 5% 0;
+    text-align: justify;
+}
+h1 {
+    font-size: 42px;
+    text-align: center;
+    padding:0 0 20px 0;
+}
+.apps .intro p {
+    text-indent:3%;
+    font-size: 21px;
+    padding:0.3% 0;
+    font-weight: 400;
+}
+.apps .intro :nth-child(5){
+    text-indent: 0%;
+    font-weight: 500;
+}
+/*Codes below for services section*/
+.services p{
+    text-align: center;
+}
+.row {
+    margin-top:3%;
+    display: flex;
+    justify-content: space-between;
+}
+.service-col{
+    flex-basis: 23%;
+    background:#fff3f3;
+    border-radius: 10px;
+    padding: 20px 15px 30px 15px;
+    transition: 0.5s;
+    position: relative;
+    margin-bottom: 5%;
+}
+.service-col p {
+    padding-bottom:20px;
+}
+.service-col h3{
+    text-align: center;
+    font-size: 21px;
+    padding:0 0 10px 0;
+}
+.service-col a{
+    text-decoration: none;
+    color:#14045c;
+    font-size: 14px;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+.service-col.hover:hover{
+    box-shadow: 0 0 20px 0 rgb(0,0,0, 0.2);
+}
+.service-col a.hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+/*Footer section*/
+.footer{
+    width: 100%;
+    bottom: 0;
+    padding:30px 0;
+    text-align: center;
+}
+.footer h3{
+    text-align: center;
+    font-size: 21px;
+    padding:0 0 10px 0;
+}
+.footer p{
+    font-size:18px;
+    padding:0% 8%;
+}
+.icons .fa-brands{
+    color:#240bdd;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 2em;
+}
+.fa-heart{
+    color:#240bdd;
+}
+@media (max-width:700px){
+    /*apps section*/
+    .header{
+        padding:0 8%;
+    }
+    nav img{
+        width:120px;
+        border-radius: 0;
+    }
+    h1{
+        font-size: 21px;
+        padding:20px 0;
+    }
+    /*remove list style for small screens*/
+    .apps .intro p {
+        text-indent: 10%;
+        font-size: 12px;
+        line-height: 20px;
+        padding:1% 0;
+    }
+    /*services section*/
+    .row{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .services p, .footer p{
+        font-size: 12px;
+    }
+    .icons .fa-brands{
+        font-size: 1em;
+    }
+}
