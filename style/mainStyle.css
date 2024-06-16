@@ -17,6 +17,99 @@ nav img {
     display: flex;
     align-items: center;
 }
+.header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header nav div{
+    font-size: 24px;
+    padding:10px 20px;
+    letter-spacing:0.1em;
+    font-weight: 600;
+    color: #fff;
+}
+.header nav div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+.header nav div a.hover:hover{
+    text-decoration: underline;
+    color:#000639;
+}
+/*
+Codes below for about class in sub pages - ged.html igcse.html etc
+These codes are shared between those sub pages
+*/
+.about{
+    padding:2% 8%;
+}
+.about p{
+    font-size: 18px;
+    text-indent: 50px;
+    text-align: justify;
+}
+.subjects{
+    padding:0 8%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.subjects .subs h3 {
+    text-align: center;
+}
+.subjects .subs a {
+    position: absolute;
+    right:15px;
+    bottom:15px;
+    text-decoration: none;
+}
+.subjects .subs a.hover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.subject-header{
+    padding:10px 0;
+}
+.subjects .subject-body{
+    padding:15px;
+    margin-bottom:30px;
+}
+.subjects .subject-body p{
+    padding-top:8px;
+    font-weight: 600;
+}
+.subjects .subject-body ul{
+    padding-left: 30px;
+}
+.subjects .subject-body ul li{
+    font-size: 14px;
+}.subs{
+    flex-basis:24%;
+    border:1pt solid grey;
+    border-radius: 8px;
+    margin:2% 0%;
+    position: relative;
+}
+.subs h3 {
+    text-align: center;
+}
+.subs a {
+    position: absolute;
+    right:15px;
+    bottom:15px;
+    text-decoration: none;
+}
+.subs a.hover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.subject-header{
+    padding:10px 0;
+}
+
 /*Codes below for apps section*/
 .apps{
     padding:2% 8% 0% 8%;
@@ -34,9 +127,17 @@ h1 {
     text-align: center;
     padding:0 0 20px 0;
 }
+h3 {
+    font-size: 24px;
+}
+p {
+    font-size:18px;
+}
+a {
+    font-size: 14px;
+}
 .apps .intro p {
     text-indent:3%;
-    font-size: 21px;
     padding:0.3% 0;
     font-weight: 400;
 }
@@ -67,17 +168,16 @@ h1 {
 }
 .service-col h3{
     text-align: center;
-    font-size: 21px;
     padding:0 0 10px 0;
 }
 .service-col a{
     text-decoration: none;
     color:#14045c;
-    font-size: 14px;
     position: absolute;
     right:10px;
     bottom:10px;
 }
+
 .service-col.hover:hover{
     box-shadow: 0 0 20px 0 rgb(0,0,0, 0.2);
 }
@@ -95,11 +195,9 @@ h1 {
 }
 .footer h3{
     text-align: center;
-    font-size: 21px;
     padding:0 0 10px 0;
 }
 .footer p{
-    font-size:18px;
     padding:0% 8%;
 }
 .icons .fa-brands{
@@ -122,13 +220,36 @@ h1 {
         border-radius: 0;
     }
     h1{
-        font-size: 21px;
+        font-size: 27px;
         padding:20px 0;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 12px;
+    }
+    a {
+        font-size: 12px;
+    }
+    .header nav div {
+        font-size: 12px;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    .subjects{
+        flex-direction: column;
+    }
+    .subjects .subs ul{
+        padding-left:20px;
+    }
+    .subjects .subs ul li {
+        font-size: 11px;
     }
     /*remove list style for small screens*/
     .apps .intro p {
         text-indent: 10%;
-        font-size: 12px;
         line-height: 20px;
         padding:1% 0;
     }
@@ -136,9 +257,6 @@ h1 {
     .row{
         flex-direction: column;
         margin-top: 5%;
-    }
-    .services p, .footer p{
-        font-size: 12px;
     }
     .icons .fa-brands{
         font-size: 1em;

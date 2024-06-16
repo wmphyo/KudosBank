@@ -1,0 +1,6 @@
+1 - Separating CSS and JS as separate components is good. 
+Generic styles can have in a file and link to every page while specific styles can design the respective pages.
+For example, generic styles for tags, such as h1, h3, p, a are designed in the generic file while other classes are stored in separate files.
+2 - If you are stuck and wanna to know more about specific codes (CSS / JS whatever!), google how that code works and you will learn.
+3 - The development takes exploratory approach. Just follow your curiosity to develop the apps. You will get the foundation first, then it can further be upgraded when you see the bigger picture.
+4 - I have both coding skills and creative thinking skills

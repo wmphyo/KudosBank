@@ -1,78 +1,19 @@
-.header nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.language-arts .subject-header {
+    background:rgba(253, 251, 137, 0.2);
 }
-.header nav div{
-    font-size: 24px;
-    padding:10px 20px;
-    letter-spacing:0.1em;
-    font-weight: 600;
-    color: #fff;
+.science .subject-header{
+    background:rgba(121, 249, 121, 0.2);
 }
-.header nav div a{
-    text-decoration: none;
-    color: #fff;
+.mathematics .subject-header{
+    background: rgba(251, 108, 108, 0.2);
 }
-.header nav div a.hover:hover{
-    /* text-decoration: underline; */
-    color:#000639;
+.social-studies .subject-header{
+    background:rgba(107, 107, 255, 0.2)
 }
-.navigation{
-    width:100%;
-    padding:0% 8%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-bottom: 1px solid #b0b0b0;
-}
-.navigation ul li a{
-    text-decoration: none;
-    color:#000639;
-    font-size: 18px;
-}
-.navigation ul li a.hover:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-.navigation .categories div {
-    padding:5px 0;
-}
-.navigation .categories div.hover:hover{
-    background-color: #3e3e3e;
-    color:#fff;
-    transition: 0.4s;
-    cursor: pointer;
-}
-.navigation ul {
-    width: 100%;
-    padding:0;
-    text-align: center;
-}
-.navigation ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
+.subjects .subs{
+    flex-basis:24%;
+    border:1pt solid grey;
+    border-radius: 8px;
+    margin:2% 0%;
     position: relative;
-    width:15%;
-}
-@media (max-width:700px){
-    .header nav div {
-        font-size: 12px;
-    }
-    .navigation ul{
-        width:100%;
-    }
-    .navigation ul li{
-        width:23%;
-        padding:5px 0;
-        text-align: center;
-    }
-    .navigation ul li a{
-        font-size: 10px;
-    }
-    .navigation .categories div {
-        font-size: 10px;
-    }
 }

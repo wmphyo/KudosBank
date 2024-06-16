@@ -1,0 +1,7 @@
+.subjects .subs{
+    flex-basis:47%;
+    border:1pt solid grey;
+    border-radius: 8px;
+    margin:2% 0%;
+    position: relative;
+}
