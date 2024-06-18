@@ -1,0 +1,30 @@
+.resource-links{
+    width:60%;
+    margin:40px auto 20px auto;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+.resource-link{
+    padding:10px 0;
+    border:1pt solid #fff8f8;
+}
+.resource-link a{
+    text-decoration: none;
+    color:#000639;
+    font-size: 16px;
+}
+.more-resources{
+    width:60%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:700px){
+    .resource-links{
+        width:80%;
+        margin:20px auto;
+    }
+    .resource-link a{
+        font-size: 10px;
+    }
+}

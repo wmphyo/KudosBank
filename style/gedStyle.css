@@ -10,10 +10,27 @@
 .social-studies .subject-header{
     background:rgba(107, 107, 255, 0.2)
 }
-.subjects .subs{
+/* .subjects .subs{
     flex-basis:24%;
     border:1pt solid grey;
     border-radius: 8px;
     margin:2% 0%;
     position: relative;
+} */
+.language-arts a, .science a, .mathematics a, .social-studies a  {
+    position: absolute;
+    right:15px;
+    bottom:15px;
+    text-decoration: none;
 }
+/* .modes .subs a.hover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+} */
+/* .modes a.hover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.mode li.hover:hover{
+    background-color: grey;
+} */

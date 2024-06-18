@@ -50,57 +50,44 @@ These codes are shared between those sub pages
     text-indent: 50px;
     text-align: justify;
 }
-.subjects{
+.categories{
     padding:0 8%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
-.subjects .subs h3 {
+.categories .subs h3 {
     text-align: center;
 }
-.subjects .subs a {
-    position: absolute;
-    right:15px;
-    bottom:15px;
-    text-decoration: none;
-}
-.subjects .subs a.hover:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-.subject-header{
+.categories .subject-header{
     padding:10px 0;
 }
-.subjects .subject-body{
+.categories .subject-body{
     padding:15px;
     margin-bottom:30px;
 }
-.subjects .subject-body p{
+.categories .subject-body p{
     padding-top:8px;
     font-weight: 600;
 }
-.subjects .subject-body ul{
+.categories .subject-body ul{
     padding-left: 30px;
 }
-.subjects .subject-body ul li{
+.categories .subject-body ul li{
     font-size: 14px;
-}.subs{
+}
+.subs{
     flex-basis:24%;
     border:1pt solid grey;
     border-radius: 8px;
     margin:2% 0%;
     position: relative;
 }
+.cie.subs, .ed-excel.subs{
+    flex-basis:36%;
+}
 .subs h3 {
     text-align: center;
-}
-.subs a {
-    position: absolute;
-    right:15px;
-    bottom:15px;
-    text-decoration: none;
 }
 .subs a.hover:hover{
     text-decoration: underline;
@@ -109,7 +96,42 @@ These codes are shared between those sub pages
 .subject-header{
     padding:10px 0;
 }
-
+.navigation{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.modes {
+    border-bottom: 1px solid #b0b0b0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color:#000639;
+    font-size: 18px;
+}
+.navigation ul li.hover:hover{
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px #e0e0e0;
+}
+.navigation ul {
+    width: 80%;
+    padding:0;
+    text-align: center;
+}
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    width:20%;
+}
 /*Codes below for apps section*/
 .apps{
     padding:2% 8% 0% 8%;
@@ -215,8 +237,11 @@ a {
     .header{
         padding:0 8%;
     }
+    .header nav div{
+        padding:0 10px;
+    }
     nav img{
-        width:120px;
+        width:90px;
         border-radius: 0;
     }
     h1{
@@ -238,27 +263,50 @@ a {
     .about p{
         font-size: 12px;
     }
-    .subjects{
+    /*subjects will be shared across all pages - ged, igcse, ielts and general english*/
+    .categories{
         flex-direction: column;
     }
-    .subjects .subs ul{
+    .categories .subs ul{
         padding-left:20px;
     }
-    .subjects .subs ul li {
+    .categories .subs ul li {
         font-size: 11px;
     }
-    /*remove list style for small screens*/
+    /* landing page - app section remove list style for small screens*/
     .apps .intro p {
         text-indent: 10%;
         line-height: 20px;
         padding:1% 0;
     }
-    /*services section*/
+    /* landing page - services section*/
     .row{
         flex-direction: column;
         margin-top: 5%;
     }
     .icons .fa-brands{
         font-size: 1em;
+    }
+    /*igcse page - subject section*/
+    .unit-names a{
+        font-size: 10px;
+    }
+    /*for subject pages - igcse esl, ged rla etc*/
+    .header nav div, .header nav div a{
+        font-size: 12px;
+    }
+    .navigation ul{
+        width:100%;
+    }
+    .navigation ul li{
+        width:23%;
+        padding:5px 0;
+        text-align: center;
+    }
+    .navigation ul li a{
+        font-size: 10px;
+    }
+    .navigation .categories div {
+        font-size: 10px;
     }
 }
