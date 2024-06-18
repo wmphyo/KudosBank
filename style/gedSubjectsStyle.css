@@ -1,25 +1,105 @@
 .container{
-    min-height:80vh;
-    width:60%;
+    /* min-height:80vh; */
+    min-height:fit-content;
+    max-height: 100vh;
+    width:80%;
     margin:auto;
     margin-top:2%;
+    border:1px solid rgb(163, 163, 163, 0.3);
+}
+.container .modes{
+    display: flex;
+    justify-content: flex-start;
+}
+.container .modes ul{
+    padding:0px;
 }
 .container ul li {
     list-style: none;
     display: inline-block;
     font-size: 18px;
-    padding:7px 25px;
-    border:1pt solid rgb(163, 163, 163, 0.7);
-    border-radius: 15px 15px 1px 1px;
+    padding:7px 0;  /* hack for hover effect and a tag click*/
 }
-.container ul{
-    padding: 0;
+.container ul li.hover:hover{
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+.container a{
+    text-decoration: none;
+    padding:7px 25px;   /* hack for hover effect and a tag click*/
 }
 .display-area{
-    border:1pt solid grey;
+    display: flex;
+}
+.description, .resource-links{
+    flex-basis: 50%;
+}
+.description {
+    border-right:1px solid rgb(163, 163, 163, 0.3);
+}
+.description img{
+    min-height: 50%;
+    width:45%;
+    margin:auto;
+    display: block;
+}
+.description p{
+    font-size: 2.2vmin;
+    padding:0px 30px;
+    text-align: justify;
+    margin-bottom: 7px;
+}
+.resource-links {
+    overflow-y: auto;
+}
+.resource-links a{
+    display: block;
+    padding:10px 30px;
+    font-size: 2.2vmin;
+}
+/*Use the viewport value instead of ems, pxs, or pts:
+1vw = 1% of viewport width
+1vh = 1% of viewport height
+1vmin = 1vw or 1vh, whichever is smaller
+1vmax = 1vw or 1vh, whichever is larger*/
+.display-area h3{
+    padding:15px 0 15px 30px;
+    /* border-bottom:1px solid rgb(163, 163, 163, 0.7); */
 }
 @media (max-width:700px){
-    .container ul li {
+    .container{
+        width: 90%;
+    }
+    .container ul{
+        display: inline-block;
+    }
+    .container .modes a {
         font-size: 10px;
+        padding:0px 5px;
+    }
+    .container .modes ul li{
+        padding:0px 5px 3px 5px;
+    }
+    .display-area{
+        flex-direction: column;
+    }
+    .display-area h3{
+        padding:15px;
+    }
+    .description{
+        border-bottom:1px solid rgb(163, 163, 163, 0.3);
+        border-right:none;
+    }
+    .description p {
+        padding:0px 15px;
+        font-size: 10px;
+    }
+    .description, .resource-links{
+        flex-direction: column;
+        min-height: 40vh;
+    }
+    .resource-links a{
+        font-size: 10px;
+        padding:7px 20px;
     }
 }

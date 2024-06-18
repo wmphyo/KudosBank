@@ -134,7 +134,7 @@ These codes are shared between those sub pages
 }
 /*Codes below for apps section*/
 .apps{
-    padding:2% 8% 0% 8%;
+    padding:0% 8% 0% 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +147,7 @@ These codes are shared between those sub pages
 h1 {
     font-size: 42px;
     text-align: center;
-    padding:0 0 20px 0;
+    padding:20px 0 20px 0;
 }
 h3 {
     font-size: 24px;
@@ -258,7 +258,7 @@ a {
         font-size: 12px;
     }
     .header nav div {
-        font-size: 12px;
+        font-size: 9px;
     }
     .about p{
         font-size: 12px;
@@ -292,8 +292,8 @@ a {
         font-size: 10px;
     }
     /*for subject pages - igcse esl, ged rla etc*/
-    .header nav div, .header nav div a{
-        font-size: 12px;
+    .header nav div a{
+        font-size: 9px;
     }
     .navigation ul{
         width:100%;
