@@ -1,0 +1,54 @@
+.er-box{
+    padding:0px 25px 25px 25px;
+    width:60%;
+    margin:auto;
+}
+.author {
+    padding:5px 0px;
+}
+.heading {
+    margin:35px 0 10px 0;
+}
+.passage p, .instruction p{
+    padding:7px 0;
+}
+.passage ol li{
+    list-style:circle;
+    padding:4px;
+    font-size: 18px;
+}
+.forewords {
+    text-indent: 45px;
+    padding:7px 0;
+}
+.sub-heading{
+    font-weight: 700;
+}
+.instruction{
+    border-top:1px solid #e0e0e0;
+    margin-top:25px;
+    padding-top:25px;
+}
+.button{
+    margin: auto;
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.button a{
+    text-decoration: none;
+    padding: 15px 30px;
+    color:#14045C;
+}
+.button a.hover:hover{
+    cursor: pointer;
+    background-color: #14045C;
+    color: #fff;
+    transition: 0.3s;
+}
+@media (max-width:700px){
+    .passage ol li{
+        font-size: 12px;
+    }
+}
