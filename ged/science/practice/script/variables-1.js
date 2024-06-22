@@ -22,7 +22,7 @@ const questionsSets = [
                 "D. Number of fish"
             ],
             answer: "A",
-            explanation: "Explanation: Independent-CO2 Pressure"
+            explanation: "Explanation: The independent variable is a variable that is changed by the researcher. So, since the CO2 pressure is being changed in this experiment while the other choices are not. So, the independent variable is CO2 pressure."
         },
         {
             passage: "A student conducted an experiment to investigate the process of photosynthesis. She filled 2 beakers with 100 ml of distilled water. She clipped 2 large leaves from an ivy plant and placed one leaf into each beaker. She then placed one of the beakers in a sunny location, and one in a dark closet. After two hours she compared the two beakers and noticed that there were many small bubbles at the edges of the plant that had been in the sun, but the bubbles were not present on the leaf that had been in the dark.  ",

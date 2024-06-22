@@ -25,7 +25,7 @@ const questionsSets = [
             explanation: "Explanation: According to the scientific method, experiments should test only one variable in order to reach a conclusion about that variable. In this study, the researchers did two things instead of just one: they created incentives to decrease pollution and also created free clinics. Therefore, they don’t know which is responsible for the health improvements. Choice (D) best describes this. Other answer choices do not address this flaw. "
         },
         {
-            passage: "Some of the stars you see in the night sky are so far away from Earth that the light from them has taken millions of years to reach you. So what you are really seeing is what those stars looked like millions of years ago. You are actually seeing into the past. To help us handle these huge distances, we use a special unit of measurement called a light-year to describe them. As its name suggests, a light-year is equal to the distance that light travels in one year. Light travels at 300,000 km per second in the vacuum of space.",
+            passage: "Some of the stars you see in the night sky are so far away from Earth that the light from them has taken millions of years to reach you. So what you are really seeing is what those stars looked like millions of years ago. You are actually seeing into the past. To help us handle these huge distances, we use a special unit of measurement called a light-year to describe them. As its name suggests, a light-year is equal to the distance that light travels in one year. Light travels at 300,000 km per second in the vacuum of space. Objects that are moving away from Earth are red-shifted. Objects that are traveling towards Earth are blue-shifted.",
             question: "3. What can you deduce about a star if the light from it has been blue-shifted?",
             options: [
                 "A. The star is cooler than most other stars",
@@ -41,7 +41,7 @@ const questionsSets = [
             question: "4. If the results of the experiment showed no change in the blood pressure for the members of either group, what conclusion can be made? ",
             options: [
                 "A. The drug does not lower blood pressure in either men or women",
-                "B. Place all strawberries into the same plastic bag",
+                "B. The drug does not lower blood pressure in men",
                 "C. The drug does not lower blood pressure in women",
                 "D. The drug may lower blood pressure in men"
             ],
