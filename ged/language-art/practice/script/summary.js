@@ -2,7 +2,7 @@ const questionsSets = [
     [
         {
             passage: [`In the bustling city of Metropolis, two bookstores stand out among the rest: The Book Haven and The Literary Lounge. The Book Haven is known for its extensive collection of rare and antique books, attracting bibliophiles who are passionate about finding unique titles. The Literary Lounge, in contrast, focuses on contemporary bestsellers and hosts frequent author events and book signings. Patrons of The Book Haven appreciate the quiet, scholarly atmosphere, while The Literary Lounge is a lively place where readers gather to discuss the latest releases. This has led to a friendly debate among Metropolis residents about which bookstore is the better choice.`,
-            ],
+                ],
             question: "1. Which of the following statements best summarizes the difference in opinion over the bookstores in Metropolis? ",
             options: [
                 "A. Some people prefer The Book Haven for its rare books, while others prefer The Literary Lounge for its events and contemporary books.  ",
@@ -15,7 +15,7 @@ const questionsSets = [
         },
         {
             passage: [`In the town of Rivertown, there are two main gyms that residents can choose from: Fitness Plus and Health Hub. Fitness Plus offers a wide range of equipment and numerous fitness classes, making it a popular choice for those who enjoy a variety of workout options. Health Hub, on the other hand, focuses on personalized training programs and a supportive community environment. Members of Fitness Plus appreciate the diversity of classes and the extensive facilities, while Health Hub members value the personalized attention and sense of community. This has led to ongoing discussions among residents about which gym is the better option.`,
-            ],
+                ],
             question: "2. Which of the following statements best summarizes the difference in opinion over the gyms in Rivertown? ",
             options: [
                 "A. Some residents prefer Fitness Plus for its personalized training, while others prefer Health Hub for its variety of equipment.",
@@ -28,7 +28,7 @@ const questionsSets = [
         },
         {
             passage: ['In a quiet village, a young boy named Oliver dreams of exploring the world beyond his hometown. One day, he discovers a hidden path in the forest that leads to a bustling city. Excited and nervous, Oliver ventures into the city, meeting new friends and encountering challenges that test his courage and kindness. By the end of his journey, Oliver realizes that while adventure is thrilling, the true joy lies in the friends he makes and the lessons he learns along the way.',
-            ],
+                ],
             question: "3. Which of the following statements best summarizes Oliver's journey? ",
             options: [
                 "A. Oliver discovers a hidden path and decides to stay in his quiet village. ",
@@ -36,7 +36,7 @@ const questionsSets = [
                 "C. The iC. Oliver dreams of exploring the world but never leaves his hometown.",
                 "D. Oliver finds a hidden path but is too nervous to venture into the city. "
             ],
-            answer: "A",
+            answer: "B",
             explanation: "Explanation: The passage describes Oliver's journey to the city where he meets new friends and faces challenges, ultimately learning valuable lessons. This matches option B, which highlights the key aspects of his journey: testing his courage, forming friendships, and gaining lessons. "
         },
         {

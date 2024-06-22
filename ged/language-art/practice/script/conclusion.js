@@ -72,7 +72,7 @@ const questionsSets = [
                 "D. The spread of pests and diseases is the most critical issue caused by climate change. ."
             ],
             answer: "C",
-            explanation: "Explanation: This sentence is correctly capitalized because it capitalizes the name The Amazon Rainforest and the continent South America."
+            explanation: "Explanation: The passage highlights the threats climate change poses to food security and the importance of developing resilient agricultural practices. Option C. summarizes the need to address these challenges to ensure food security and sustainability, making it the best conclusion."
         },
     ],
     // Add more question sets as needed
