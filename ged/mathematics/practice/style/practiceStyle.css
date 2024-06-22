@@ -1,0 +1,144 @@
+.box {
+    width:80%;
+    border:1px solid rgb(163, 163, 163, 0.3);
+    margin: auto;
+    display: flex;
+    min-height: 60vh;
+}
+.passage{
+    flex-basis: 50%;
+    padding:20px 30px;
+}
+.passage p{
+    font-size: 2.4vmin;
+}
+.multiple-choice p{
+    font-size: 2.4vmin;
+}
+.multiple-choice{
+    /* flex-basis: 100%; */
+    padding:20px 30px;
+}
+.multiple-choice label{
+    display: block;
+    font-size: 2.2vmin;
+    padding:10px 0px 10px 15px;
+}
+.multiple-choice input[type=radio]{
+    margin-right:5px;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    width:80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.btn {
+    padding:10px;
+    flex-basis: 50%;
+    text-align: center;
+    background-color:#14045c;
+    color:#fff;
+}
+.btn a{
+    color:#fff;
+    text-decoration: none;
+    padding:0% 30%;
+    text-align: center;
+}
+#btnNext{
+    visibility:hidden;
+}
+#btnGoBack{
+    display: none;
+}
+.btn.hover:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+.feedback{
+    margin:15px 0;
+    padding:5px 15px;
+    font-size: 2.4vmin;
+}
+.feedback.incorrect{
+    background-color: rgb(255, 48, 48);
+    color:#fff;
+}
+.feedback.correct{
+    background-color:rgb(0, 162, 0) ;
+    color:#fff;
+}
+.explanation{
+    color:#000;
+    font-size: 2.4vmin;
+}
+.final-result{
+    padding:0 20px;
+}
+.result-summary{
+    text-align: center;
+    padding:20px 0;
+}
+.result-summary h2{
+    font-size: 36px;
+}
+.answer-review h3{
+    text-align: center;
+}
+.review-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.review-item {
+    margin:20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.review-item .review-question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.review-item .user-answer.correct {
+    color: green;
+}
+.review-item .user-answer.incorrect {
+    color: red;
+}
+.review-item .correct-answer {
+    color: #003a63;
+    font-weight: bold;
+}
+.review-item .explanation {
+    margin-top: 10px;
+    color: #333;
+    font-style: italic;
+}
+@media (max-width:700px){
+    .box{
+        flex-direction: column;
+        width:90%;
+    }
+    .passage, .multiple-choice{
+        padding:10px 15px;
+    }
+    .multiple-choice label{
+        padding:5px 0px 5px 5px;
+    }
+    .buttons{
+        width:90%;
+    }
+    .btn {
+        font-size: 2.2vmin;
+        padding:5px;
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .btn a{
+        padding:0% 20%;
+    }
+}
