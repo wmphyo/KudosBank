@@ -16,7 +16,7 @@
     font-size: 2.4vmin;
 }
 .multiple-choice{
-    flex-basis: 50%;
+    /* flex-basis: 100%; */
     padding:20px 30px;
 }
 .multiple-choice label{
@@ -44,7 +44,8 @@
 .btn a{
     color:#fff;
     text-decoration: none;
-    padding:0% 45%;
+    padding:0% 30%;
+    text-align: center;
 }
 #btnNext{
     visibility:hidden;
@@ -136,5 +137,9 @@
         padding:5px;
         flex-basis: 50%;
         text-align: center;
+    }
+    .btn a{
+        padding:0% 20%;
+        font-size: 10px;
     }
 }
