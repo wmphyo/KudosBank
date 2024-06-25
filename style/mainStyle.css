@@ -38,6 +38,13 @@ nav img {
     text-decoration: underline;
     color:#000639;
 }
+/*active tabs of sub pages - for better navigation purpose*/
+.active-page{
+    background-color: rgb(255, 77, 0);
+}
+.active-page a{
+    color:#fff;
+}
 /*
 Codes below for about class in sub pages - ged.html igcse.html etc
 These codes are shared between those sub pages
