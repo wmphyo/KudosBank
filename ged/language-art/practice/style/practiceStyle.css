@@ -5,6 +5,40 @@
     display: flex;
     min-height: 60vh;
 }
+/* for RLA - grammar pages*/
+.grammar{
+    padding:25px;
+}
+.line-space{
+    padding-bottom:15px;
+}
+.grammar select{
+    outline: auto;
+    height:25px;
+    font-size: 12px;
+}
+.correct-color{
+    color:green;
+}
+.incorrect-color{
+    color:red;
+}
+.grammar-feedback{
+    margin-top:20px;
+}
+.grade{
+    display: block;
+    background-color:rgb(4, 255, 4);
+    font-size: 18px;
+    padding:20px 0;
+    text-align: center;
+}
+.grammar-explanation{
+    padding:20px;
+}
+.grammar-explanation p {
+    margin-bottom:15px;
+}
 .passage{
     flex-basis: 50%;
     padding:20px 30px;
@@ -39,6 +73,7 @@
     text-align: center;
     background-color:#14045c;
     color:#fff;
+    margin-bottom: 40px;
 }
 .btn a{
     color:#fff;
@@ -46,7 +81,10 @@
     padding:0% 30%;
     text-align: center;
 }
-#btnNext{
+#btnNextPage {/*for RLA grammar - used via js*/
+    display: none;
+}
+#btnNext{ /*for RLA readings - used via js*/
     visibility:hidden;
 }
 #btnGoBack{
@@ -128,6 +166,11 @@
     }
     .multiple-choice label{
         padding:5px 0px 5px 5px;
+    }
+    .grammar select{
+        outline: auto;
+        height:25px;
+        font-size: 7px;
     }
     .buttons{
         width:90%;
