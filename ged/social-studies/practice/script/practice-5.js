@@ -111,8 +111,8 @@ function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questionsSets[currentQuestionSet].length) {
         loadQuestion();
-        document.getElementById('btnCheck').style.display = 'block';
-        document.getElementById('btnNext').style.visibility = 'hidden';
+        document.getElementById('btnCheck').classList.remove('hide');
+        document.getElementById('btnNext').classList.add('hide');
     } else {
         if (currentQuestionSet < questionsSets.length - 1) {
             showResults();
@@ -141,12 +141,12 @@ function checkAnswer() {
         }
         explanation.textContent = questionsSets[currentQuestionSet][currentQuestionIndex].explanation;
         if (currentQuestionIndex === 4) {
-            document.getElementById('btnCheck').style.display = 'none';
-            document.getElementById('btnNext').style.visibility = 'visible';
+            document.getElementById('btnCheck').classList.add('hide');
+            document.getElementById('btnNext').classList.remove('hide');
             document.getElementById('btnNext').innerHTML = "Show Result";
         } else {
-            document.getElementById('btnCheck').style.display = 'none';
-            document.getElementById('btnNext').style.visibility = 'visible';
+            document.getElementById('btnCheck').classList.add('hide');
+            document.getElementById('btnNext').classList.remove('hide');
         }
         console.log(currentQuestionIndex);
     } else {

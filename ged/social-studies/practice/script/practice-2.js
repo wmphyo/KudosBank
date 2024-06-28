@@ -73,7 +73,7 @@ const questionsSets = [
                 "C. The signing of the Treaty of Versailles",
                 "D. The passage of the Prohibition Amendment"
             ],
-            answer: "D",
+            answer: "B",
             explanation: "Explanation: One of the major achievements of the American Civil Rights Movement was the passage of the Civil Rights Act of 1964. This landmark legislation was a significant step towards ending racial discrimination and segregation in the United States. It prohibited discrimination based on race, color, religion, sex, or national origin in various areas, including employment and public accommodations. Option A is incorrect because the establishment of the United Nations occurred in 1945, unrelated to the Civil Rights Movement. Option C is incorrect because the Treaty of Versailles was signed in 1919 to end World War I and is not connected to the Civil Rights Movement. Option D is incorrect because the Prohibition Amendment, which banned alcohol, was passed in 1919 and repealed in 1933, also unrelated to the Civil Rights Movement. "
         },
     ],
@@ -106,8 +106,8 @@ function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questionsSets[currentQuestionSet].length) {
         loadQuestion();
-        document.getElementById('btnCheck').style.display = 'block';
-        document.getElementById('btnNext').style.visibility = 'hidden';
+        document.getElementById('btnCheck').classList.remove('hide');
+        document.getElementById('btnNext').classList.add('hide');
     } else {
         if (currentQuestionSet < questionsSets.length - 1) {
             showResults();
@@ -136,12 +136,12 @@ function checkAnswer() {
         }
         explanation.textContent = questionsSets[currentQuestionSet][currentQuestionIndex].explanation;
         if (currentQuestionIndex === 4) {
-            document.getElementById('btnCheck').style.display = 'none';
-            document.getElementById('btnNext').style.visibility = 'visible';
+            document.getElementById('btnCheck').classList.add('hide');
+            document.getElementById('btnNext').classList.remove('hide');
             document.getElementById('btnNext').innerHTML = "Show Result";
         } else {
-            document.getElementById('btnCheck').style.display = 'none';
-            document.getElementById('btnNext').style.visibility = 'visible';
+            document.getElementById('btnCheck').classList.add('hide');
+            document.getElementById('btnNext').classList.remove('hide');
         }
         console.log(currentQuestionIndex);
     } else {

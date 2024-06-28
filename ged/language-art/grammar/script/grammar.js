@@ -11,8 +11,7 @@ const grammarExplanation = [
         '<b>Number 2</b>: Choice A is correct because it is the only choice in which the modifier <i>first</i> is placed next to the verb it modifies: <i>learn</i>.',
         '<b>Number 3</b>: Choice C is correct. It expresses the ideas in a clear and concise way without creating a run-on sentence.',
         '<b>Number 4</b>: Choice B is correct. The pronoun <i>it</i> correctly refers to the <i>animal</i> in the previous sentence.',
-        '<b>Number 5</b>: Choice D uses capitalization correctly. Days of the week should be capitalized, but the word <i>open</i> should not.',
-        '<b>Number 6</b>: Choice B is correct because it is clear and concise. The other choices are wordy or have awkward construction.'
+        '<b>Number 5</b>: Choice D uses capitalization correctly. Days of the week should be capitalized, but the word <i>open</i> should not.'
     ],
     [//practice-3
         '<b>Number 1</b>: Choice B is correct. It uses formal or Standard English, which is appropriate to a business letter, while the other choices do not.',
@@ -75,7 +74,9 @@ function checkAnswer() {
         answer.disabled = true;
         //hide checkAns btn and show goBack btn to RLA page
         document.getElementById('btnGoBack').style.display = 'block';
-        document.getElementById('btnNextPage').style.display = 'block';
+        if(practiceNum!==6){ //don't display next btn for last page
+            document.getElementById('btnNextPage').style.display = 'block';
+        }
         document.getElementById('btnCheck').style.display = 'none';
     }
 
