@@ -319,87 +319,20 @@ btnBack.addEventListener('click', (e)=>{
 });
 
 function checkAnswer(){
-    
+    const selectedAnswer = document.querySelectorAll('input[type="radio"]');
+    // const selectedAnswer = document.querySelectorAll('input[type="radio"]:checked');
     var userInput = [];
-    // var selectedAnswer = [];
-    
-    //This takes ONLY CHECKED. So leave out UNCHECKED
-    // const selectedAnswer = document.querySelectorAll('input[type="radio"]:checked');//only the checked radio buttons - not okay for unchecked scenarios
-    // const selectedAnswer = document.querySelectorAll('input[type="radio"]'); //every single radio buttons
-    
-    for (var j = 0; j <= maxPageNum;j++){
-        // const selectedAnswer = document.getElementsByName('input[name="ans'+(j+1)+'"]');
-        const selectedAnswer = document.getElementsByName("ans"+(j+1)+"");
-        console.log(selectedAnswer);
-        console.log(selectedAnswer.length);
-        console.log(maxPageNum);
-        // for(var input of selectedAnswer){
-        //     if(input.checked===true){
-        //         console.log('It is checked'); 
-        //         userInput.push(selectedAnswer.value);
-        //         console.log(userInput);
-        //     } else {
-        //         console.log('It it not checked');
-        //         userInput.push('Unanswered');
-        //         console.log(userInput);
-        //     }
-        // }
 
-        //this check for ALL 4 inputs under the same name
-        for(var i = 0;i<selectedAnswer.length; i++){
-            if(selectedAnswer[i].checked){
-                console.log('It is checked'); 
-                userInput.push(selectedAnswer[i].value);
-                console.log(selectedAnswer.length);
-                console.log(userInput);
-                break;
-            } else {
-                //if 4 unchecked radio appears
-                console.log('It is Unchecked');
-                i===3?userInput.push('Unanswered'):null;
-                console.log(userInput);
-            }
+    for(var input of selectedAnswer){
+        if(input.checked===true){
+            userInput.push(input.value);
+        } else {
+            userInput.push('undefined');
         }
+        console.log(userInput); 
     }
-
-
-    // const unSelectedAnswer = document.querySelectorAll('input[type="radio"]:unchecked');
-
-    // console.log('Checked radio number ' + selectedAnswer);
-    // console.log('Unchecked radio number ' + unSelectedAnswer);
-    // for(var i=0;i<maxPageNum;i++){
-        // selectedAnswer = document.querySelectorAll("input[name='ans" + (i+1) +"']");
-        // console.log(i);
-    // }
-    
     // console.log(selectedAnswer);
-
-    // for(var i=0;i<selectedAnswer.length;i++){
-    //     userInput[i]===undefined?userInput.push('Unanswered'):userInput.push(input.value);
-
-    //     console.log(userInput[i]);
-    // }
-
-    // for(var input of selectedAnswer){
-        // if(input.checked===true){
-        // if(input.value===' '){
-        //     userInput.push('Unanswered');
-        //     console.log(userInput);
-        //     console.log(input.value);
-        // } else {
-            // userInput.push(input.value);
-            // console.log(userInput);
-            // console.log(input.value);
-            // console.log(selectedAnswer);
-        // }
-
-        // input.value===null?userInput.push('Unanswered'):userInput.push(input.value);
-        
-        // } else {
-            // userInput.push('undefined');
-        // }
-        // console.log(userInput);  
-    // }
+    // console.log(userInput);
 
     //correct answer - add grade | incorrect answer - add explanation
     for(var i=0;i< correctAnsArr.length;i++){
@@ -407,7 +340,6 @@ function checkAnswer(){
         if(userInput[i]===correctAnsArr[i][0]){
             grade++;
         }
-        // console.log('User input is ' + userInput[i]);
     }
 
     //hide passage and multiple-choice
@@ -441,12 +373,13 @@ function checkAnswer(){
         const yourAnsPara = document.createElement('p');
         const correctAnsPara = document.createElement('p');
 
+
         //check if MCQ was left unanswered.
         let inputCheck;
         userInput[i]===undefined?inputCheck='Unanswered':inputCheck=userInput[i];
 
         //assign text and values
-        yourAnsPara.innerHTML = `Your answer is: ${userInput[i]}`;
+        yourAnsPara.innerHTML = `Your answer is: ${inputCheck}`;
         correctAnsPara.innerHTML = `Correct answer is: ${correctAnsArr[i][0]}`;
         explanationDIV.append(yourAnsPara);
         explanationDIV.append(correctAnsPara);
@@ -456,7 +389,7 @@ function checkAnswer(){
             const feedBackPara = document.createElement('p');
             feedBackPara.innerHTML = exp;
             explanationDIV.append(feedBackPara);
-            // console.log(feedBackPara);
+            console.log(feedBackPara); 
         }
         feedbackSection.append(explanationDIV);
     }
