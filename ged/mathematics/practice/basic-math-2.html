@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GED - Mathematics - Basic Math Practice 2</title>
-    <link rel="stylesheet" href="style/practiceStyle.css">
+    <link rel="stylesheet" href="../practiceStyle.css">
     <link rel="stylesheet" href="../../../style/mainStyle.css">
     <link rel="stylesheet" href="../../../style/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,19 +34,62 @@
         </nav>
     </section>
 
-    <h1>Basic Math</h1>
+    <h1>Basic Math Practice 2</h1>
 
     <section class="box">
-        <!-- <div class="passage"></div> -->
-        <div class="multiple-choice"></div>
+        <div class="math-multiple-choice">
+            <div id="ans1">
+                <h3>Question 1</h3>
+                <p>1. For a family get-together, Darryl wants to be sure that each child gets 2 party favors. The party favors cost $3 each, and there are 11 children coming. How many party favors will Darryl need?</p>
+                <label><input type="radio" name="ans1" value="A">A. 9</label>
+                <label><input type="radio" name="ans1" value="B">B. 11</label>
+                <label><input type="radio" name="ans1" value="C">C. 18</label>
+                <label><input type="radio" name="ans1" value="D">D. 22</label>
+            </div>
+            <div id="ans2" class="hide">
+                <h3>Question 2</h3>
+                <p>2. Sarah and Kate live 18 miles apart, and they both work at the same office. If Sarah lives 25 miles from the office and Kate lives 30 miles from the office, how many miles farther from the office does Kate live than Sarah?</p>
+                <label><input type="radio" name="ans2" value="A">A. 5</label>
+                <label><input type="radio" name="ans2" value="B">B. 7</label>
+                <label><input type="radio" name="ans2" value="C">C. 12</label>
+                <label><input type="radio" name="ans2" value="D">D. 15</label>
+            </div>
+            <div id="ans3" class="hide">
+                <h3>Question 3</h3>
+                <p>3. Which of the following correctly shows 1,543,976 rounded to the nearest hundred thousand?</p>
+                <label><input type="radio" name="ans3" value="A">A. 2,000,000</label>
+                <label><input type="radio" name="ans3" value="B">B. 1,600,000</label>
+                <label><input type="radio" name="ans3" value="C">C. 1,500,000</label>
+                <label><input type="radio" name="ans3" value="D">D. 1,540,000</label>
+            </div>
+            <div id="ans4" class="hide">
+                <h4>Question 4</h4>
+                <p>4. Angelo bought a used car with 39,451 miles on it. If the car now has 70,040 miles on it, how many miles has Angelo driven the car? </p>
+                <label><input type="radio" name="ans4" value="A">A. 30,589</label>
+                <label><input type="radio" name="ans4" value="B">B. 39,459</label>
+                <label><input type="radio" name="ans4" value="C">C. 70,040</label>
+                <label><input type="radio" name="ans4" value="D">D. 109,491</label>
+            </div>
+            <div id="ans5" class="hide">
+                <h3>Question 5</h3>
+                <p>5.  Inventory shows that a warehouse has 45 printers in stock. If each printer is valued at $125, what is the total value of the printer inventory?</p>
+                <label><input type="radio" name="ans5" value="A">A. $5625</label>
+                <label><input type="radio" name="ans5" value="B">B. $170</label>
+                <label><input type="radio" name="ans5" value="C">C. $80</label>
+                <label><input type="radio" name="ans5" value="D">D. $45</label>
+            </div>
+        </div>
+        <section class="feedback hide"></section>
     </section>
 
     <section class="buttons">
-        <div id="btnNext" class="btn hover" onclick="nextQuestion()">Next Question</div>
-        <div id="btnCheck" class="btn hover" onclick="checkAnswer()">Check Answer</div>
-        <div id="btnGoBack" class="btn hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnPreviousPage" class="btn hide hover">Back</div>
+        <div id="btnNext" class="btn hover">Next</div>        
+        <div id="btnCheck" class="btn hide hover" onclick="checkAnswer()">Check Answer</div>
+        <div id="btnGoBack" class="btn hide hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnNextPage" class="btn hide hover"><a href="geometry-1.html">Next Test</a></div>
     </section>
-    <script src="script/basic-math-2.js"></script>
+    <script src="script/math-practice.js"></script>
 </body>
 
 </html>

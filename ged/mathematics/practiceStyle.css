@@ -5,6 +5,9 @@
     display: flex;
     min-height: 60vh;
 }
+.hide{
+    display: none;
+}
 .passage{
     flex-basis: 50%;
     padding:20px 30px;
@@ -12,27 +15,46 @@
 .passage p{
     font-size: 2.4vmin;
 }
-.multiple-choice p{
+.passage img{
+    width:100%;
+    background-position: center;
+}
+
+.text-indentation{
+    text-indent: 30px;
+}
+.list-style{
+    font-size: 18px;
+}
+.multiple-choice p, .math-multiple-choice p{
     font-size: 2.4vmin;
 }
 .multiple-choice{
+    flex-basis: 50%;
+    padding:20px 30px;
+}
+.math-multiple-choice{
     flex-basis: 100%;
     padding:20px 30px;
 }
-.multiple-choice label{
+.multiple-choice label, .math-multiple-choice label{
     display: block;
     font-size: 2.2vmin;
     padding:10px 0px 10px 15px;
 }
-.multiple-choice input[type=radio]{
+.multiple-choice input[type=radio], .math-multiple-choice input[type=radio]{
     margin-right:5px;
+}
+/*Although part of flex family, this one shows when other twos are hidden*/
+.feedback{
+    flex-basis: 100%;
 }
 .buttons{
     display: flex;
     justify-content: flex-end;
     width:80%;
-    margin: auto;
-    margin-bottom: 50px;
+    margin:auto;
+    margin-bottom: 40px;
 }
 .btn {
     padding:10px;
@@ -41,17 +63,32 @@
     background-color:#14045c;
     color:#fff;
 }
+.grade{
+    text-align: center;
+    width:100%;
+    padding:0 0 10px 0;
+    font-weight: 600;
+}
+.review-ans {
+    padding:20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.feedback .exp{ /*explanation section under feedback section*/
+    padding:10px 20px;
+    margin:20px 0;
+    border:1px solid rgb(241, 241, 241);
+    background:rgb(241, 241, 241);
+}
+.exp p{
+    margin-bottom: 10px;
+}
 .btn a{
     color:#fff;
     text-decoration: none;
     padding:0% 30%;
     text-align: center;
-}
-#btnNext{
-    visibility:hidden;
-}
-#btnGoBack{
-    display: none;
 }
 .btn.hover:hover{
     background-color: #000;
@@ -75,7 +112,9 @@
     font-size: 2.4vmin;
 }
 .final-result{
-    padding:0 20px;
+    font-size: 36px;
+    text-align: center;
+    padding:10px 0;
     width:100%;
 }
 .result-summary{
@@ -132,6 +171,9 @@
     }
     .buttons{
         width:90%;
+    }
+    .list-style{
+        font-size: 9px;
     }
     .btn {
         font-size: 2.2vmin;

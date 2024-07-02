@@ -34,19 +34,79 @@
         </nav>
     </section>
 
-    <h1>Variable and Group</h1>
+    <h1>Variable and Group Practice 1</h1>
 
     <section class="box">
-        <div class="passage"></div>
-        <div class="multiple-choice"></div>
+        <div class="passage">
+            <div id="quest1">
+                <h3>Question 1</h3>
+                <p>You were testing the effectiveness of a cream that’s supposed to grow hair on bald men’s heads.</p>
+            </div>
+            <div id="quest2" class="hide">
+                <h3>Question 2</h3>
+                <p>A group of fertilized fish eggs from the same parents were divided into four different aquariums, each with a different pressure of CO2. One tank contained the normal atmospheric conditions of 390 microatmospheres of CO2. The other tanks contained 600, 700, and 900 microatmospheres of CO2, respectively. The same number of eggs was placed into each aquarium. The eggs hatched and the fish lived in these aquariums until testing.<br><br> To prepare for the experiment, one fish was placed into an aquarium containing the same CO2 pressure in which it was raised. The fish’s position was recorded every 5 seconds for 2 minutes. Then sounds from a predatory fish were played from an underwater speaker at one end of the aquarium at a volume that was only audible to the fish when swimming near the speaker. The fish’s position was again recorded every 5 seconds for 2 minutes. Trials were repeated with fish from each tank.</p>
+            </div>
+            <div id="quest3" class="hide">
+                <h3>Question 3</h3>
+                <p>A student conducted an experiment to investigate the process of photosynthesis. She filled 2 beakers with 100 ml of distilled water. She clipped 2 large leaves from an ivy plant and placed one leaf into each beaker. She then placed one of the beakers in a sunny location, and one in a dark closet. After two hours she compared the two beakers and noticed that there were many small bubbles at the edges of the plant that had been in the sun, but the bubbles were not present on the leaf that had been in the dark.</p>
+            </div>
+            <div id="quest4" class="hide">
+                <h3>Question 4</h3>
+                <p>A pharmaceutical company was testing out a new drug that was intended to lower blood pressure in diabetic patients. Two groups of volunteers were assembled. Group 1 consisted of 200 men, whereas Group 2 consisted of 200 women. All of the trial’s participants were diabetics between the ages of 20 and 50 with similar lifestyles, diet, and general health. Group 2 was given the trial drug, while Group 1 was given a sugar pill as a placebo (fake pill).</p>
+            </div>
+            <div id="quest5" class="hide">
+                <h3>Question 5</h3>
+                <p>High levels of dissolved carbon dioxide can increase the acidity of water and potentially harm the marine life living there. Scientists conducted an experiment to see whether increased acidity affects hearing in fish. One hundred fertilized eggs from the same parent fish were placed in three separate tanks of water. Tank A contained water with the usual atmospheric pressure of carbon dioxide (400 microatmospheres). The carbon dioxide pressure levels in Tanks B and C were 800 microatmospheres and 1,200 micro atmospheres, respectively. Once the fish reached maturity, underwater speakers placed at one end of each tank played the sounds of the fish’s natural predators (these sounds could be heard only when the fish were near the speaker). The positions of the fish in each tank were recorded throughout the experiment. It was found that the fish raised in elevated carbon dioxide levels did not avoid the sound of the predators. However, the fish raised in regular carbon dioxide levels did avoid the end of the tank that had the speaker.</p>
+            </div>
+        </div>
+        <div class="multiple-choice">
+            <div id="ans1">
+                <p>1. Which of the following would be a good control group for this experiment?</p>
+                <label><input type="radio" name="ans1" value="A">A. a group of bald women</label>
+                <label><input type="radio" name="ans1" value="B">B. a group of men with full heads of hair who are also given the cream</label>
+                <label><input type="radio" name="ans1" value="C">C. a group of bald men who are given a harmless cream that has no effect</label>
+                <label><input type="radio" name="ans1" value="D">D. a group of men who are almost bald</label>
+            </div>
+            <div id="ans2" class="hide">
+                <p>2. Identify the independent variable in the investigation.</p>
+                <label><input type="radio" name="ans2" value="A">A. CO2 pressure</label>
+                <label><input type="radio" name="ans2" value="B">B. position of fish</label>
+                <label><input type="radio" name="ans2" value="C">C. number of eggs</label>
+                <label><input type="radio" name="ans2" value="D">D. number of fish</label>
+            </div>
+            <div id="ans3" class="hide">
+                <p>3. Which of the following is a dependent variable(s) in this experiment?</p>
+                <label><input type="radio" name="ans3" value="A">A. the amount of bubbles that were produced</label>
+                <label><input type="radio" name="ans3" value="B">B. the amount of light that each leaf received</label>
+                <label><input type="radio" name="ans3" value="C">C. the amount of water in each beaker</label>
+                <label><input type="radio" name="ans3" value="D">D. the number of leaves in each beaker</label>
+            </div>
+            <div id="ans4" class="hide">
+                <p>4. Which of the following is true about the experimental drug trial?</p>
+                <label><input type="radio" name="ans4" value="A">A. Both groups were control groups</label>
+                <label><input type="radio" name="ans4" value="B">B. Both groups were experimental groups</label>
+                <label><input type="radio" name="ans4" value="C">C. Group 2 was the experimental group, and Group 1 was the control group</label>
+                <label><input type="radio" name="ans4" value="D">D. Group 1 was the experimental group, and Group 2 was the control group</label>
+            </div>
+            <div id="ans5" class="hide">
+                <p>5. Which of the following is a true statement?</p>
+                <label><input type="radio" name="ans5" value="A">A. The independent variable of the experiment was the temperature of the water in each tank, and the dependent variable was the hearing ability of the fish</label>
+                <label><input type="radio" name="ans5" value="B">B. The independent variable of the experiment was the carbon dioxide level in each tank, and the dependent variable was the position of the fish in the tank</label>
+                <label><input type="radio" name="ans5" value="C">C. The independent variable of the experiment was hearing ability of the fish in each tank, and the dependent variable was the position of the fish in the tank</label>
+                <label><input type="radio" name="ans5" value="D">D. The independent variable of the experiment was the position of the fish in the tank, and the dependent variable was the carbon dioxide level in each tank</label>
+            </div>
+        </div>
+        <div class="feedback hide"></div>
     </section>
 
     <section class="buttons">
-        <div id="btnNext" class="btn hover" onclick="nextQuestion()">Next Question</div>
-        <div id="btnCheck" class="btn hover" onclick="checkAnswer()">Check Answer</div>
-        <div id="btnGoBack" class="btn hover"><a href="../../science.html">Go Back</a></div>
+        <div id="btnPreviousPage" class="btn hide hover">Back</div>
+        <div id="btnNext" class="btn hover">Next</div>
+        <div id="btnCheck" class="btn hide hover" onclick="checkAnswer()">Check Answer</div>
+        <div id="btnGoBack" class="btn hide hover"><a href="../../science.html">Go Back</a></div>
+        <div id="btnNextPage" class="btn hide hover"><a href="#">Next Test</a></div>
     </section>
-    <script src="script/variables-1.js"></script>
+    <script src="script/sci-practice.js"></script>
 </body>
 
 </html>

@@ -15,8 +15,8 @@
     <meta name="google-adsense-account" content="ca-pub-5453798728297907"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GED - Mathematics - World Problem Practice 2</title>
-    <link rel="stylesheet" href="style/practiceStyle.css">
+    <title>GED - Mathematics - Word Problem Practice 2</title>
+    <link rel="stylesheet" href="../practiceStyle.css">
     <link rel="stylesheet" href="../../../style/mainStyle.css">
     <link rel="stylesheet" href="../../../style/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,19 +34,62 @@
         </nav>
     </section>
 
-    <h1>Word Problem</h1>
+    <h1>Word Problem Practice 2</h1>
 
     <section class="box">
-        <!-- <div class="passage"></div> -->
-        <div class="multiple-choice"></div>
+        <div class="math-multiple-choice">
+            <div id="ans1">
+                <h3>Question 1</h3>
+                <p>1. Imelda bought a guitar with no money down and has a loan for $1150 at 6% per year. If she pays off the loan after 4 months, what is the total cost of the guitar</p>
+                <label><input type="radio" name="ans1" value="A">A. $1,167.25</label>
+                <label><input type="radio" name="ans1" value="B">B. $1,173.00</label>
+                <label><input type="radio" name="ans1" value="C">C. $1,219.00</label>
+                <label><input type="radio" name="ans1" value="D">D. $1,840.00</label>
+            </div>
+            <div id="ans2" class="hide">
+                <h3>Question 2</h3>
+                <p>2. If every member of a team is paid 5p dollars for his or her participation, and Team Alpha has 6k members, Team Beta has 4p members, and Team Delta has 9h members, which of the following represents the total amount paid, in dollars, to the members of all three teams?</p>
+                <label><input type="radio" name="ans2" value="A">A. $72,00</label>
+                <label><input type="radio" name="ans2" value="B">B. $18,000/label>
+                <label><input type="radio" name="ans2" value="C">C. $19,200</label>
+                <label><input type="radio" name="ans2" value="D">D. $20,000</label>
+            </div>
+            <div id="ans3" class="hide">
+                <h3>Question 3</h3>
+                <p>3. A passenger train leaves the station, traveling west at 120 miles per hour. A freight train leaves the same station 2 hours later traveling 80 miles per hour. If t represents the time in hours that the first train has traveled, which equation represents a situation where the two trains are 640 miles apart?</p>
+                <label><input type="radio" name="ans3" value="A">A. 16 pounds</label>
+                <label><input type="radio" name="ans3" value="B">B. 5 pounds</label>
+                <label><input type="radio" name="ans3" value="C">C. 4 pounds</label>
+                <label><input type="radio" name="ans3" value="D">D. 3 pounds</label>
+            </div>
+            <div id="ans4" class="hide">
+                <h4>Question 4</h4>
+                <p>4. Stan is diluting 5 quarts of a 50% antifreeze solution down to 20%. How much pure water should he add?</p>
+                <label><input type="radio" name="ans4" value="A">A. 2 quarts</label>
+                <label><input type="radio" name="ans4" value="B">B. 5 quarts</label>
+                <label><input type="radio" name="ans4" value="C">C. 7.5 quarts</label>
+                <label><input type="radio" name="ans4" value="D">D. 12.5 quarts</label>
+            </div>
+            <div id="ans5" class="hide">
+                <h3>Question 5</h3>
+                <p>5. Alex earns a weekly base salary of $650 as a car salesman. He also earns a 9% commission on his monthly sales after the first $10,000. What was his total salary this month if he sold 7 cars whose average price was $4,500 each?</p>
+                <label><input type="radio" name="ans5" value="A">A. $1,935</label>
+                <label><input type="radio" name="ans5" value="B">B. $2,585</label>
+                <label><input type="radio" name="ans5" value="C">C. $2,835</label>
+                <label><input type="radio" name="ans5" value="D">D. $3,485</label>
+            </div>
+        </div>
+        <section class="feedback hide"></section>
     </section>
 
     <section class="buttons">
-        <div id="btnNext" class="btn hover" onclick="nextQuestion()">Next Question</div>
-        <div id="btnCheck" class="btn hover" onclick="checkAnswer()">Check Answer</div>
-        <div id="btnGoBack" class="btn hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnPreviousPage" class="btn hide hover">Back</div>
+        <div id="btnNext" class="btn hover">Next</div>        
+        <div id="btnCheck" class="btn hide hover" onclick="checkAnswer()">Check Answer</div>
+        <div id="btnGoBack" class="btn hide hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnNextPage" class="btn hide hover"><a href="basic-math-1.html">Next Test</a></div>
     </section>
-    <script src="script/word-problem-2.js"></script>
+    <script src="script/math-practice.js"></script>
 </body>
 
 </html>

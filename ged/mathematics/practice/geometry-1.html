@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GED - Mathematics - Geometry Practice 1</title>
-    <link rel="stylesheet" href="style/practiceStyle.css">
+    <link rel="stylesheet" href="../practiceStyle.css">
     <link rel="stylesheet" href="../../../style/mainStyle.css">
     <link rel="stylesheet" href="../../../style/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,19 +34,62 @@
         </nav>
     </section>
 
-    <h1>Geometry</h1>
+    <h1>Geometry Practice 1</h1>
 
     <section class="box">
-        <!-- <div class="passage"></div> -->
-        <div class="multiple-choice"></div>
+        <div class="math-multiple-choice">
+            <div id="ans1">
+                <h3>Question 1</h3>
+                <p>1. The length of a rectangle is 5 centimeters more than the width. The perimeter of the rectangle is 90 centimeters. What is the length of the rectangle?</p>
+                <label><input type="radio" name="ans1" value="A">A. 15 centimeters</label>
+                <label><input type="radio" name="ans1" value="B">B. 18 centimeters</label>
+                <label><input type="radio" name="ans1" value="C">C. 22.5 centimeters</label>
+                <label><input type="radio" name="ans1" value="D">D. 25 centimeters</label>
+            </div>
+            <div id="ans2" class="hide">
+                <h3>Question 2</h3>
+                <p>2. Given a rectangular field 125 by 100 feet, what would be the length of the side of an equilateral triangle with the same perimeter? </p>
+                <label><input type="radio" name="ans2" value="A">A. 150 feet</label>
+                <label><input type="radio" name="ans2" value="B">B. 225 feet</label>
+                <label><input type="radio" name="ans2" value="C">C. 300 feet</label>
+                <label><input type="radio" name="ans2" value="D">D. 450 feet</label>
+            </div>
+            <div id="ans3" class="hide">
+                <h3>Question 3</h3>
+                <p>3. Andrea must paint an antique sign composed of three spheres, each of which has a diameter of 12 inches. Each can of paint covers 288 square inches. How many cans of paint must Andrea buy to do the job?</p>
+                <label><input type="radio" name="ans3" value="A">A. 4</label>
+                <label><input type="radio" name="ans3" value="B">B. 5</label>
+                <label><input type="radio" name="ans3" value="C">C. 6</label>
+                <label><input type="radio" name="ans3" value="D">D. 7</label>
+            </div>
+            <div id="ans4" class="hide">
+                <h4>Question 4</h4>
+                <p>4. Given a square 4 feet on a side, what is the area of the largest circle that fits within the square?</p>
+                <label><input type="radio" name="ans4" value="A">A. 25.14 square feet</label>
+                <label><input type="radio" name="ans4" value="B">B. 12.56 square feet</label>
+                <label><input type="radio" name="ans4" value="C">C. 6.28 square feet</label>
+                <label><input type="radio" name="ans4" value="D">D. 14 square feet</label>
+            </div>
+            <div id="ans5" class="hide">
+                <h3>Question 5</h3>
+                <p>5. A regulation soccer ball has a circumference of 68 centimeters, and a regulation basketball has a circumference of 75.5 centimeters. What is the difference in their volumes?</p>
+                <label><input type="radio" name="ans5" value="A">A. 1900 cubic centimeters</label>
+                <label><input type="radio" name="ans5" value="B">B. 1958 cubic centimeters</label>
+                <label><input type="radio" name="ans5" value="C">C. 2060 cubic centimeters</label>
+                <label><input type="radio" name="ans5" value="D">D. 2152 cubic centimeters</label>
+            </div>
+        </div>
+        <section class="feedback hide"></section>
     </section>
 
     <section class="buttons">
-        <div id="btnNext" class="btn hover" onclick="nextQuestion()">Next Question</div>
-        <div id="btnCheck" class="btn hover" onclick="checkAnswer()">Check Answer</div>
-        <div id="btnGoBack" class="btn hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnPreviousPage" class="btn hide hover">Back</div>
+        <div id="btnNext" class="btn hover">Next</div>        
+        <div id="btnCheck" class="btn hide hover" onclick="checkAnswer()">Check Answer</div>
+        <div id="btnGoBack" class="btn hide hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnNextPage" class="btn hide hover"><a href="probability-1.html">Next Test</a></div>
     </section>
-    <script src="script/geometry-1.js"></script>
+    <script src="script/math-practice.js"></script>
 </body>
 
 </html>

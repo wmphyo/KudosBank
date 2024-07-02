@@ -15,8 +15,8 @@
     <meta name="google-adsense-account" content="ca-pub-5453798728297907"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GED - Mathematics - World Problem Practice 1</title>
-    <link rel="stylesheet" href="style/practiceStyle.css">
+    <title>GED - Mathematics - Word Problem Practice 1</title>
+    <link rel="stylesheet" href="../practiceStyle.css">
     <link rel="stylesheet" href="../../../style/mainStyle.css">
     <link rel="stylesheet" href="../../../style/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,19 +34,62 @@
         </nav>
     </section>
 
-    <h1>Word Problem</h1>
+    <h1>Word Problem Practice 1</h1>
 
     <section class="box">
-        <!-- <div class="passage"></div> -->
-        <div class="multiple-choice"></div>
+        <div class="math-multiple-choice">
+            <div id="ans1">
+                <h3>Question 1</h3>
+                <p>1. Tinytown has all of its 132 citizens living on the 40 square miles within its town limits. What is the population density of Tinytown in persons per square mile? </p>
+                <label><input type="radio" name="ans1" value="A">A. 3.1 persons per square mile</label>
+                <label><input type="radio" name="ans1" value="B">B. 3.2 persons per square mile</label>
+                <label><input type="radio" name="ans1" value="C">C. 3.3 persons per square mile</label>
+                <label><input type="radio" name="ans1" value="D">D. 3.4 persons per square mile</label>
+            </div>
+            <div id="ans2" class="hide">
+                <h3>Question 2</h3>
+                <p>2. If every member of a team is paid 5p dollars for his or her participation, and Team Alpha has 6k members, Team Beta has 4p members, and Team Delta has 9h members, which of the following represents the total amount paid, in dollars, to the members of all three teams?</p>
+                <label><input type="radio" name="ans2" value="A">A. 1080hkp</label>
+                <label><input type="radio" name="ans2" value="B">B. 1080hkp2/label>
+                <label><input type="radio" name="ans2" value="C">C. 120p2k + 45ph</label>
+                <label><input type="radio" name="ans2" value="D">D. 30kp + 20p2 + 45hp</label>
+            </div>
+            <div id="ans3" class="hide">
+                <h3>Question 3</h3>
+                <p>3. A passenger train leaves the station, traveling west at 120 miles per hour. A freight train leaves the same station 2 hours later traveling 80 miles per hour. If t represents the time in hours that the first train has traveled, which equation represents a situation where the two trains are 640 miles apart?</p>
+                <label><input type="radio" name="ans3" value="A">A. 120t + 80(t - 2) = 640</label>
+                <label><input type="radio" name="ans3" value="B">B. 120(t + 2) + 80t = 640</label>
+                <label><input type="radio" name="ans3" value="C">C. 120t + 80(t + 2) = 640</label>
+                <label><input type="radio" name="ans3" value="D">D. 120(t - 2) + 80t = 640</label>
+            </div>
+            <div id="ans4" class="hide">
+                <h4>Question 4</h4>
+                <p>4.The sum of 3 times a number and 4 times a second number is divided by the sum of 2 and a third number. Which of the following expressions represents this series of operations?</p>
+                <label><input type="radio" name="ans4" value="A">A.(3x + 4y) ÷ (2 + x)</label>
+                <label><input type="radio" name="ans4" value="B">B. 3x + 4y÷ (2 + z)</label>
+                <label><input type="radio" name="ans4" value="C">C. 3x + 4y ÷ 2 + x</label>
+                <label><input type="radio" name="ans4" value="D">D. (3x + 4y) ÷ 2z</label>
+            </div>
+            <div id="ans5" class="hide">
+                <h3>Question 5</h3>
+                <p>5. Sylvia scored 10 points better than Wiley on their science exam. Greg scored 6 points less than Wiley. Altogether, the students earned 226 points. How many points did Sylvia earn?</p>
+                <label><input type="radio" name="ans5" value="A">A. 74</label>
+                <label><input type="radio" name="ans5" value="B">B. 78</label>
+                <label><input type="radio" name="ans5" value="C">C. 84</label>
+                <label><input type="radio" name="ans5" value="D">D. 94</label>
+            </div>
+        </div>
+        <section class="feedback hide"></section>
     </section>
 
     <section class="buttons">
-        <div id="btnNext" class="btn hover" onclick="nextQuestion()">Next Question</div>
-        <div id="btnCheck" class="btn hover" onclick="checkAnswer()">Check Answer</div>
-        <div id="btnGoBack" class="btn hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnPreviousPage" class="btn hide hover">Back</div>
+        <div id="btnNext" class="btn hover">Next</div>        
+        <div id="btnCheck" class="btn hide hover" onclick="checkAnswer()">Check Answer</div>
+        <div id="btnGoBack" class="btn hide hover"><a href="../../mathematics.html">Go Back</a></div>
+        <div id="btnNextPage" class="btn hide hover"><a href="word-problem-2.html">Next Test</a></div>
     </section>
-    <script src="script/word-problem-1.js"></script>
+    <script src="script/math-practice.js"></script>
 </body>
 
 </html>

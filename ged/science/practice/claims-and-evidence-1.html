@@ -34,19 +34,92 @@
         </nav>
     </section>
 
-    <h1>Claims and Evidence</h1>
+    <h1>Claims and Evidence Practice 1</h1>
 
     <section class="box">
-        <div class="passage"></div>
-        <div class="multiple-choice"></div>
+        <div class="passage">
+            <div id="quest1">
+                <h3>Question 1</h3>
+                <p>The process of some members of a species being better able to survive and reproduce than others is called natural selection. Natural selection works on traits that affect organisms’ ability to survive in their environment. You can tell that selection is occurring when a specific version of a trait becomes more or less common in a species.</p>
+                <br/>
+                <p>Fish population in a freshwater lake has been monitored by local ecologists for 26 years. The population includes both dark- and light-colored fish. Over this period, the ratio of dark to light fish has remained about 3 to 2.</p>
+            </div>
+            <div id="quest2" class="hide">
+                <h3>Question 2</h3>
+                <p>In a scientific study, a change in the independent variable results in a change in the dependent variable. For example, a change in tree trunk color resulted in a change in wing-color frequencies in England's peppered moth population.</p>
+            </div>
+            <div id="quest3" class="hide">
+                <h3>Question 3</h3>
+                <p>Scientists believe that the universe formed 10 to 20 billion years ago. The most widely accepted model of how the universe began is called the Big Bang theory. According to this theory, all of the matter and energy in the universe was once contained in an area the size of an atom. An enormous explosion (Big Bang) caused the matter and energy to rapidly expand outward, creating the universe. Scientists believe the universe has been expanding ever since.</p>
+            </div>
+            <div id="quest4" class="hide">
+                <h3>Question 4</h3>
+                <p>Biologists have long known that some types of electromagnetic radiation, such as X-rays and gamma rays, can be dangerous to human beings. However, until now, no one has ever suggested that microwave radiation might also be harmful. In preliminary test-tube laboratory results, a scientist has found elevated growth rates in cancer cells exposed to low doses of microwaves. These results are only preliminary because, first, there has been no controlled study of the effects of microwaves on human beings. Second, this study was of short duration, raising the possibility that the dangers of long term exposure have not yet been assessed. Although federal guidelines for how much electromagnetic energy can be allowed to enter the work and home environment have been made more stringent since they were first implemented in 1982, the recent study poses troubling questions about the safety of microwaves.</p>
+                <br/>
+                <p>I. Individuals who extensively use point-to-point telecommunications, which heavily utilize microwaves, have higher-than-average incidences of cancer.</p> 
+                <br/>
+                <p>II. A long-term study of cancer cells exposed to microwaves in the laboratory shows the same pattern of growth found in the short-term study.</p> 
+                <br/>
+                <p>III. A study of dental associates who regularly work with X-rays shows that such individuals have higher-than-normal incidences of cancer.</p>
+            </div>
+            <div id="quest5" class="hide">
+                <h3>Question 5</h3>
+                <p>Asteroids are composed of rock, and comets are composed of frozen gas and dust. Scientists observe a previously unidentified object in the solar system.</p>
+            </div>
+        </div>
+
+        <div class="multiple-choice">
+            <div id="ans1">
+                <p>1. Ecologists can conclude that natural selection is NOT occurring because</p>
+                <label><input type="radio" name="ans1" value="A">A. the fish do not have enough variation in body color.</label>
+                <label><input type="radio" name="ans1" value="B">B. the fish have enough food and do not need to change.</label>
+                <label><input type="radio" name="ans1" value="C">C. neither body color has a greater effect on fish survival.</label>
+                <label><input type="radio" name="ans1" value="D">D. humans are causing artificial selection to occur instead.</label>
+            </div>
+            <div id="ans2" class="hide">
+                <p>2. When studying natural selection, which of the following observations would provide the clearest proof that selection is happening?</p>
+                <label><input type="radio" name="ans2" value="A">A. a change in the dependent variable</label>
+                <label><input type="radio" name="ans2" value="B">B. no change in the dependent variable</label>
+                <label><input type="radio" name="ans2" value="C">C. a change in the independent variable</label>
+                <label><input type="radio" name="ans2" value="D">D. no change in the independent variable</label>
+            </div>
+            <div id="ans3" class="hide">
+                <p>3. The Big Bang theory provides the leading model for the formation of the</p>
+                <label><input type="radio" name="ans3" value="A">A. Earth</label>
+                <label><input type="radio" name="ans3" value="B">B. Universe</label>
+                <label><input type="radio" name="ans3" value="C">C. Solar system</label>
+                <label><input type="radio" name="ans3" value="D">D. Milky Way galaxy</label>
+            </div>
+            <div id="ans4" class="hide">
+                <p>4. Which of the following, if true, would lend weight to the scientists’ initial findings regarding microwaves?</p>
+                <label><input type="radio" name="ans4" value="A">A. I only</label>
+                <label><input type="radio" name="ans4" value="B">B. II only</label>
+                <label><input type="radio" name="ans4" value="C">C. I and II</label>
+                <label><input type="radio" name="ans4" value="D">D. I and III</label>
+            </div>
+            <div id="ans5" class="hide">
+                <p>5. What information would best help scientists identify whether the object is an asteroid or comet?</p>
+                <label><input type="radio" name="ans5" value="A">A. the size of the object</label>
+                <label><input type="radio" name="ans5" value="B">B. the object's composition"</label>
+                <label><input type="radio" name="ans5" value="C">C. the location of the object</label>
+                <label><input type="radio" name="ans5" value="D">D. the number of times the object has orbited the sun</label>
+            </div>
+        </div>
+
+        <section class="feedback hide">
+        </section>
     </section>
 
+   
+
     <section class="buttons">
-        <div id="btnNext" class="btn hover" onclick="nextQuestion()">Next Question</div>
-        <div id="btnCheck" class="btn hover" onclick="checkAnswer()">Check Answer</div>
-        <div id="btnGoBack" class="btn hover"><a href="../../science.html">Go Back</a></div>
+        <div id="btnPreviousPage" class="btn hide hover">Back</div>
+        <div id="btnNext" class="btn hover">Next</div>        
+        <div id="btnCheck" class="btn hide hover" onclick="checkAnswer()">Check Answer</div>
+        <div id="btnGoBack" class="btn hide hover"><a href="../../science.html">Go Back</a></div>
+        <div id="btnNextPage" class="btn hide hover"><a href="claims-and-evidence-2.html">Next Test</a></div>
     </section>
-    <script src="script/claims-and-evidence-1.js"></script>
+    <script src="script/sci-practice.js"></script>
 </body>
 
 </html>
